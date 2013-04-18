@@ -1,14 +1,39 @@
-How this works:
+# meteor-github
 
-- The app uses the `XML2JS` global, which is defined in the xml2js
-  package.
+This is a version of [Mike de Boer](https://github.com/mikedeboer)'s excellent
+[node-github](https://github.com/mikedeboer/node-github) npm module, repackaged
+for Meteor.
 
-- The xml2js package is defined in packages/. All subdirectories of
-  packages/ are treated as packages to be automatically added to your
-  app.
+## Example Usage
+You can use it in exactly the same way you would use the original package
+(example adapted from its GitHub page):
 
-- packages/xml2js/package.js describes the package, with its NPM
-  dependencies and the list of files to load (namely xml2js.js).
+```javascript
+var GitHub = require("github");
 
-- packages/xml2js/xml2js.js wraps an asyncronous node module in a
-  synchronous api, using Futures.
+var github = new GitHub({
+    version: "3.0.0", // required
+    timeout: 5000     // optional
+});
+
+github.user.getFollowingFromUser({
+    user: "ndhoule"
+}, function(err, res) {
+    console.log(JSON.stringify(res));
+});
+```
+
+Because Meteor follows a synchronous programming model, this package allows you
+to skip out on the callback if you prefer:
+
+```javascript
+var result = github.user.getFollowingFromUser({
+    user: "ndhoule"
+});
+```
+
+## How to Get It
+Unfortunately, you'll have to shoehorn it in manually for the time being until I
+get it up on Atmosphere.
+
+Sorry!
