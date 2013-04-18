@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "github": {
+      "version": "0.1.8",
+      "from": "https://registry.npmjs.org/github/-/github-0.1.8.tgz",
+      "resolved": "https://registry.npmjs.org/github/-/github-0.1.8.tgz"
+    }
+  }
+}
