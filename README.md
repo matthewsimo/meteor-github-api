@@ -30,10 +30,16 @@ to skip out on the callback if you prefer:
 var result = github.user.getFollowingFromUser({
     user: "ndhoule"
 });
+
+console.log(JSON.stringify(result));
 ```
 
 ## How to Get It
-Unfortunately, you'll have to shoehorn it in manually for the time being until I
-get it up on Atmosphere.
+You can install this package through Atmosphere using
+[meteorite](https://github.com/oortcloud/meteorite) by running `mrt add github`.
 
-Sorry!
+## Feedback
+This is my first Meteor package; while there's not much to it, but I'm sure
+there's room for improvement. If you like it and want to help make it better,
+file an [issue](https://github.com/ndhoule/meteor-github/issues), submit a pull
+request, or drop me an [email](nathan@nathanhoule.com). Thanks!
