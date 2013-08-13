@@ -1,9 +1,9 @@
 Package.describe({
-  summary: "NodeJS wrapper for the GitHub API"
+  summary: 'NodeJS wrapper for the GitHub API'
 });
 
-Npm.depends({github: "0.1.8"});
+Npm.depends({github: '0.1.10'});
 
 Package.on_use(function (api) {
-  api.add_files("github.js", "server");
+  api.add_files('github-api.js', 'server');
 });

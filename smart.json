@@ -1,8 +1,8 @@
 {
-  "name": "github",
+  "name": "github-api",
   "description": "node-github package adapted for Meteor",
-  "homepage": "https://github.com/ndhoule/meteor-github",
+  "homepage": "https://github.com/ndhoule/meteor-github-api",
   "author": "Nathan Houle (http://nathanhoule.com)",
-  "version": "0.1.8",
-  "git": "https://github.com/ndhoule/meteor-github.git"
+  "version": "0.1.10",
+  "git": "https://github.com/ndhoule/meteor-github-api.git"
 }
